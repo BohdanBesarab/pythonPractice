@@ -79,7 +79,7 @@
         <p> Тут повинен бути якийсь текст, але я щось довго думав що тут написати, справді довго але нічого так і не придумав. </p>
         <button id="buy"> Купити </button>
     </div>
-    <form>
+    <form id="form">
         <input type="text" placeholder="Ім'я" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
         <input type="text" placeholder="Телефон" id="user_phone">
@@ -90,7 +90,7 @@
 <script>
     let tg = window.Telegram.WebApp;
     let buy = bocument.getElementById("buy");
-     let order = bocument.getElementById("order");
+    let order = bocument.getElementById("order");
 
     buy.addEvenListener("click", () => {
         document.getElementById('main').style.display = "none";

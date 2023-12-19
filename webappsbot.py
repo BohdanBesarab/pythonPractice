@@ -6,8 +6,8 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Open website', web_app=WebAppInfo(url = 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/BohdanBesarab/pythonPractice/main/index.html')))
+    markup = types.InlineKeyboardMarkup()
+    markup.add(types.InlineKeyboardButton('Open website', web_app=WebAppInfo(url = 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/BohdanBesarab/pythonPractice/main/index.html')))
     await message.answer('Hello my friend', reply_markup=markup)
 
 executor.start_polling(dp)
