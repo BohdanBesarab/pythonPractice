@@ -89,8 +89,8 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
     let tg = window.Telegram.WebApp;
-    let buy = bocument.getElementById("buy");
-    let order = bocument.getElementById("order");
+    let buy = document.getElementById("buy");
+    let order = document.getElementById("order");
 
     buy.addEvenListener("click", () => {
         document.getElementById("main").style.display = "none";
@@ -100,7 +100,7 @@
     });
 
         order.addEvenListener("click", () => {
-        tg.close();
+            tg.close();
 
     });
 </script>
