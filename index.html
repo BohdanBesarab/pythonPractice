@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
     <meta charset="UTF-8">
     <title>Shop</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Inconsolata:wght@200;500&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
         * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body{
-        font-family: 'Inconsolata', sans-serif;
-        font-weight: 200;
-        color: var(--tg-theme-text-color);
-        background: var(--tg-theme-bg-color);
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 200;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
         }
         #main{
-        width: 100%;
-        padding: 20px;
-        text-align: center;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
         }
         h1{
-        margin-top:70px;
-        margin-bottom:10px;
+            margin-top:70px;
+            margin-bottom:10px;
+            text-align: center;
         }
         img{
-        width: 70px;
-        margin: 30px auto;
+            width: 500px;
+            margin: 3px auto;
         }
         p {
             width: 350px;
@@ -80,6 +84,7 @@
         <button id="buy"> Купити </button>
     </div>
     <form id="form">
+        <p><h1>Оформити замовлення</h1></p>
         <input type="text" placeholder="Ім'я" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
         <input type="text" placeholder="Телефон" id="user_phone">
@@ -91,6 +96,7 @@
     let tg = window.Telegram.WebApp;
     let buy = document.getElementById("buy");
     let order = document.getElementById("order");
+    tg.expand();
 
     buy.addEvenListener("click", () => {
         document.getElementById("main").style.display = "none";
