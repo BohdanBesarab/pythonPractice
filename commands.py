@@ -1,7 +1,7 @@
 import telebot
 import webbrowser
 
-bot = telebot.TeleBot('6900126431:AAHTez4qsJIm5bcm5J8v7rgiTxfYtwVnYwc')
+bot = telebot.TeleBot('')
 #створення команди на посилання на сайт
 @bot.message_handler(commands=['site', 'website'])
 def site (message):
