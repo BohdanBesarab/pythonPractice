@@ -2,7 +2,7 @@ import telebot
 from aiogram import Bot, Dispatcher, executor, types
 
 
-bot = Bot('6900126431:AAHTez4qsJIm5bcm5J8v7rgiTxfYtwVnYwc')
+bot = Bot('')
 dp = Dispatcher(bot)
 
 
